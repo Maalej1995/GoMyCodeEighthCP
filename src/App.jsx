@@ -61,8 +61,7 @@ function App() {
             </div>
           </div>)}
         </div>
-        <div style={{ opacity: "1", position: "fixed", margin: "40%", display: show }}>
-          <p>ToDo Update</p>
+        <div style={{ opacity: "1", position: "fixed", marginLeft: "40%", marginTop: "10px", display: show }}>
           <form onSubmit={handleModifyValidation} action="">
             <input type="text" value={selectedTodo.value} onChange={e => setSelectedTodo({ ...selectedTodo, value: e.target.value })} style={{ outline: "none", border: "none", backgroundColor: "white", border: "none", width: "300px", height: "30px", borderRadius: "10px" }} />
             <input type="submit" value="Save" style={{ outline: "none", border: "none", backgroundColor: "green", width: "50px", height: "30px", borderRadius: "10px", marginLeft: "5px" }} />
